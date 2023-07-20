@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+select option {
+  background: rgb(161, 144, 144);
+  line-height: 5px;
+}
+
+.container {
+  max-width: 1214px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font__Inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font__Monserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding-top: 23px;
+  background: #484848;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.header__top .header__search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 550px;
+  width: 100%;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0 14px;
+}
+
+.header__top .header__search-input {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  width: 80%;
+}
+
+.header__top .header__search-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+.header__top .header__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+.header__top .header__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.header__top .header__contact-gorod {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 7px;
+}
+
+.header__top .header__contact-select {
+  background: transparent;
+  border: none;
+  outline: none;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  width: 100%;
+  color: #BCBCBC;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__top .header__contact-select::after {
+  content: url("../images/header__contact-city__icon.svg");
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: red;
+  display: inline-block;
+  z-index: 2;
+}
+
+.header__top .header__contact-btn {
+  width: 130px;
+}
+
+.header .header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header__navigation-item {
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 68px;
+  transition: 0.5s;
+  letter-spacing: 0.42px;
+  cursor: pointer;
+}
+
+.header .header__navigation-item:hover {
+  font-weight: 900;
+}
+
+.common__btn {
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 18px;
+  background: #FFD825;
+  padding: 16px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

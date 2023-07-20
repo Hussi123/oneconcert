@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: inline-block;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+select{
+    background: transparent;
+    border: none;
+    outline: none;
+
+    option{
+        background: rgb(161, 144, 144);
+        line-height: 5px;
+    }
+}
+
+.container {
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.font__Inter{
+    font-family: 'Inter' , sans-serif;
+}
+
+.font__Monserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import "_mixin";
+@import "_header";
+@import "_common";
+@import "_main_months";

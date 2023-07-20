@@ -1,0 +1,106 @@
+.header {
+    padding-top: 23px;
+    background: #484848;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 21px;
+
+        .header__search {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            max-width: 550px;
+            width: 100%;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 0 14px;
+
+            &-input {
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+                width: 80%;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.50);
+                    font-size: 13px;
+
+                }
+            }
+        }
+
+        .header__contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 55px;
+
+            &-gorod {
+                display: flex;
+                align-items: center;
+                position: relative;
+                gap: 7px;
+            }
+
+            &-select {
+                background: transparent;
+                border: none;
+                outline: none;
+                width: 100%;
+                color: #BCBCBC;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 16.1px;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: url('../images/header__contact-city__icon.svg');
+                    position: absolute;
+                    top: 10px;
+                    right: 0;
+                    width: 15px;
+                    height: 15px;
+                    background: red;
+                    display: inline-block;
+                    z-index: 2;
+                }
+            }
+
+            &-btn {
+                width: 130px;
+            }
+        }
+    }
+
+    .header__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-item {
+            color: #fff;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 68px;
+            transition: .5s;
+            letter-spacing: 0.42px;
+            cursor: pointer;
+            border-bottom: 2px solid #ffffff00;
+
+            &:hover {
+                font-weight: 900;
+                border-bottom: 2px solid #FFD825;
+            }
+        }
+    }
+}
