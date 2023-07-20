@@ -113,7 +113,7 @@
 .main__months::-webkit-scrollbar-thumb {
     background: rgba(58, 114, 60, 1);
     border-radius: 5px 0 0 5px;
-    /* box-shadow: inset 5px -5px 5px rgba(58, 114, 60, 1); */
+    box-shadow: inset 5px -5px 5px rgba(58, 114, 60, 1);
 }
 
 .main__month {
@@ -171,6 +171,75 @@
     margin-bottom: 70px;
 }
 
+.slider .swiper-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.swiper-slide {
+    position: relative;
+    border-radius: 18px;
+    height: 633px;
+    overflow: hidden;
+    /* max-width: 380px; */
+}
+
+.swiper__slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper__bottom {
+    position:relative;
+    margin-top: 30px;
+
+}
+
+.slider__slide-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 195px;
+    border-radius: 18px;
+    padding: 10px 21px 21px;
+    display: block;
+    object-fit: cover;
+    background: #414141;
+    color: #fff;
+    font-family: 'Public Sans', sans-serif;
+    color: var(--ffffff, #FFF);
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.422px;
+}
+
+.slider__card-title {
+    font-size: 33.776px;
+    font-weight: 800;
+}
+
+.slider__card-title+p {
+    font-size: 21.11px;
+    font-weight: 500;
+    line-height: 29.554px;
+}
+
+.slider__slide-info span {
+    color: var(--principales-7-b-809-b, #7B809B);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 21px;
+    display: inline-block;
+}
+
+.slider__card-btn {
+    width: 100%;
+}
+
 .top {
     display: flex;
     align-items: center;
@@ -220,101 +289,20 @@
     cursor: pointer;
 }
 
+.top__slider-namber {
+    position: relative;
+    width: 50px;
+    height: 30px;
+}
+
 .top__slider-arrows__right:hover,
 .top__slider-arrows__left:hover {
     background: #e0e0e038;
 }
 
-/* .slider__wrapper {} */
-
-.slider__wrapper {
-    position: relative;
-
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.slider__card {
-    width: 380px;
-    height: 633px;
-    background: url('../images/slider__card-image.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 18px;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.slider__card-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #404040;
-    width: 100%;
-    height: 195px;
-    color: #FFF;
-    padding: 10px 21px 21px;
-    border-radius: 0 0 18px 18px;
-}
-
-.slider__card-title {
-    color: var(--ffffff, #FFF);
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Public Sans', sans-serif;
-    font-size: 33.776px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.422px;
-}
-
-
-.slider__card-info p {
-    color: var(--ffffff, #FFF);
-    font-family: 'Public Sans', sans-serif;
-    font-size: 21.11px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 29.554px;
-    letter-spacing: -0.422px;
-}
-
-.slider__card-info span {
-
-    color: var(--principales-7-b-809-b, #7B809B);
-    font-family: 'Public Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    margin-bottom: 20px;
-}
-
-.slider__card-btn {
-    display: block;
-    padding: 14px 31px;
-    text-align: center;
-    margin-top: 20px;
-    color: #000;
-    text-align: center;
-    font-family: ' Public Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: -0.4px;
-    border-radius: 18px;
-    background: var(--yellow, #FFD825);
-}
-
 .slider2 img {
     width: 100%;
 }
-
 
 /* slider end */
 
@@ -605,6 +593,7 @@ footer {
     left: 0;
     z-index: 1;
     opacity: 0;
+    z-index: 2;
     pointer-events: none;
     transition: 500ms;
 }
@@ -698,7 +687,7 @@ footer {
         max-width: 320px;
     }
 
-    .modal__inner{
+    .modal__inner {
         width: 80vw;
         padding: 50px 30px;
     }
@@ -715,12 +704,16 @@ footer {
         right: 0px;
     }
 
-    .modal__spiska-wrapper{
+    .modal__spiska-wrapper {
         overflow-x: scroll;
     }
 
-    .modal__spiska{
+    .modal__spiska {
         width: 700px;
+    }
+
+    .swiper-slide {
+        min-width: 320px;
     }
 }
 
@@ -817,11 +810,29 @@ footer {
         border-radius: 11px;
         padding: 11px 31px;
     }
+
+    .swiper-slide {
+        height: 439px;
+        min-width: 300px;
+    }
+
+    .slider__card-title {
+        font-size: 25px;
+    }
+
+    .top__slider-logo h2 {
+        font-size: 28px;
+    }
+  
 }
 
 @media (max-width:500px) {
     .header .header__top .header__contact-gorod {
         display: none;
+    }
+
+    .swiper__slide {
+        min-width: 170px;
     }
 
     .popularnoe__card {
@@ -843,4 +854,9 @@ footer {
     .footer__content:last-child {
         margin-top: 38px;
     }
+
+      .top__arrows-right{
+        display: none;
+    }
+    
 }

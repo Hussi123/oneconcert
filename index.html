@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One concert</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -32,8 +34,6 @@
                             <option value="select__option">Москва</option>
                             <option value="select__option">Москва</option>
                         </select>
-                        <!-- <img src="./images/header__contact-city__icon.svg" alt="header__contact-city__icon"
-                            class="header__contact-icon"> -->
                     </div>
                     <button class="header__contact-btn common__btn">
                         Войти
@@ -106,6 +106,7 @@
         </div>
     </header>
     <!-- modal1 -->
+
     <input type="radio" id="modal_1" name="modal" hidden>
     <div class="modal1">
         <div class="container">
@@ -152,21 +153,11 @@
         </div>
     </div>
 
-
-
     <input type="radio" id="modal_2" name="modal" hidden>
     <input type="radio" id="modal_3" name="modal" hidden>
     <input type="radio" id="modal_4" name="modal" hidden>
     <input type="radio" id="modal_5" name="modal" hidden>
     <input type="radio" id="modal_6" name="modal" hidden>
-
-
-
-
-
-
-
-
 
     <section class="main">
         <div class="container">
@@ -721,51 +712,66 @@
 
     <section class="slider">
         <div class="container">
-            <!-- <div class="top">
+            <div class="top">
                 <div class="top__slider-logo">
                     <img src="./images/top__slider-logo.svg" alt="top slider logo">
                     <h2>ТОП-10</h2>
                 </div>
                 <div class="top__arrows-right">
                     <div class="top__slider-arrows">
-                        <div class="top__slider-arrows__left"><img src="./images/dropdown__left.svg" alt=""></div>
-                        <div class="top__slider-arrows__right"><img src="./images/dropdown__right.svg" alt=""></div>
-                    </div>x
-                    <div class="top__slider-namber">
-                        <span>1</span>
-                        <span>/</span>
-                        <span>4</span>
+                        <div class="top__slider-arrows__left prev__btn"><img src="./images/dropdown__left.svg" alt="">
+                        </div>
+                        <div class="top__slider-arrows__right next__btn"><img src="./images/dropdown__right.svg" alt="">
+                        </div>
                     </div>
+                    <div class="top__slider-namber">
+                        <div class="swiper-pagination"></div>
+                    </div>
+
                 </div>
             </div>
-            <div class="slider__wrapper swiper-container swiper mySwiper">
+
+            <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="item__slide slider__card swiper-slide">
-                        <div class="slider__card-info">
+                    <div class="swiper-slide">
+                        <img src="./images/slider__card-image-2.png" alt="" class="swiper__slide-img">
+                        <div class="slider__slide-info">
                             <div class="slider__card-title">David Garret</div>
                             <p>30 Марта 2023</p>
                             <span>Центральный концертный зал</span>
                             <a href="#" class="slider__card-btn common__btn">Купить билеты </a>
                         </div>
                     </div>
-                    <div class="item__slide slider__card swiper-slide">
-                        <div class="slider__card-info">
+                    <div class="swiper-slide">
+                        <img src="./images/slider__card-image.png" alt="" class="swiper__slide-img">
+                        <div class="slider__slide-info">
                             <div class="slider__card-title">David Garret</div>
                             <p>30 Марта 2023</p>
                             <span>Центральный концертный зал</span>
                             <a href="#" class="slider__card-btn common__btn">Купить билеты </a>
                         </div>
                     </div>
-                    <div class="item__slide slider__card swiper-slide">
-                        <div class="slider__card-info">
+                    <div class="swiper-slide">
+                        <img src="./images/slider__card-image-3.png" alt="" class="swiper__slide-img">
+                        <div class="slider__slide-info">
                             <div class="slider__card-title">David Garret</div>
                             <p>30 Марта 2023</p>
                             <span>Центральный концертный зал</span>
                             <a href="#" class="slider__card-btn common__btn">Купить билеты </a>
                         </div>
                     </div>
-                    <div class="item__slide slider__card swiper-slide">
-                        <div class="slider__card-info">
+                    <div class="swiper-slide">
+                        <img src="./images/slider__card-image.png" alt="" class="swiper__slide-img">
+                        <div class="slider__slide-info">
+                            <div class="slider__card-title">David Garret</div>
+                            <p>30 Марта 2023</p>
+                            <span>Центральный концертный зал</span>
+                            <a href="#" class="slider__card-btn common__btn">Купить билеты </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider__card-image-2.png" alt="" class="swiper__slide-img">
+                        <div class="slider__slide-info">
                             <div class="slider__card-title">David Garret</div>
                             <p>30 Марта 2023</p>
                             <span>Центральный концертный зал</span>
@@ -773,10 +779,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div> -->
+
+            </div>
             <div class="slider2">
                 <img src="./images/slider__2.png" alt=" slider2 image">
             </div>
@@ -785,13 +789,13 @@
 
     <section class="mashhurlar">
         <div class="container">
-            <!-- <div class="mashhurlar__top">
+            <div class="mashhurlar__top">
                 <div class="top__slider-logo">
                     <img src="./images/popularnoe__img.svg" alt="top slider logo">
                     <h2>пОПУЛЯРНЫЕ</h2>
                 </div>
                 <button class="mashhurlar__top-btn">Смотреть все</button>
-            </div> -->
+            </div>
             <div class="popularnoe__cards">
                 <div class="popularnoe__card">
                     <div class="popularnoe__card-img">
@@ -887,7 +891,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="container">
             <div class="footer__inner">
@@ -934,7 +937,9 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
