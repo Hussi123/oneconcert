@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Баста</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bastra.html">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <img src="./images/Logo.svg" alt="header logo" class="header__logo">
+                <div class="header__search">
+                    <img src="./images/searchicon.svg" alt=" header search img" class="header__serch-icon">
+                    <input type="text" class="header__search-input " placeholder="События, артисты и места">
+                </div>
+                <label for="header__menu" class="header__menu">
+                    <img src="./images/header__menu-img.png" alt="" class="header__menu-img">
+                </label>
+                <div class="header__contact">
+                    <div class="header__contact-gorod">
+                        <img src="./images/header__contact-img.png" alt="">
+                        <select class="header__contact-select">
+                            <option value="select__option">Москва</option>
+                            <option value="select__option">Москва</option>
+                            <option value="select__option">Москва</option>
+                            <option value="select__option">Москва</option>
+                            <option value="select__option">Москва</option>
+                        </select>
+                    </div>
+                    <button class="header__contact-btn common__btn">
+                        Войти
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- HEADER MOBILE START -->
+            <input type="checkbox" id="header__menu" hidden>
+            <div class="header__menu-modal">
+                <div class="header__mobile-input mobile__firt-input">
+                    <img src="./images/header__mobile-search__icon.png" alt="">
+                    <input type="text" placeholder="События, артисты и места" class="">
+                </div>
+                <div class="header__mobile-title">
+                    Выбор города
+                </div>
+                <div class="header__mobile-input">
+                    <img src="./images/header__mobile-search__icon.png" alt="">
+                    <input type="text" placeholder="Найти город" class="">
+                </div>
+                <div class="header__mobile-title">
+                    Выберите из списка
+                </div>
+                <div class="header__mobile-spiska__wrapper">
+                    <div class="header__mobile-spiska">
+                        <a href="#">Санкт-Петербург</a>
+                        <a href="#">Екатеринбург</a>
+                        <a href="#">Абакан</a>
+                        <a href="#">Анапа</a>
+                        <a href="#">Архангельск</a>
+                        <a href="#">Астрахань</a>
+                    </div>
+                    <div class="header__mobile-spiska">
+                        <a href="#">Калининград</a>
+                        <a href="#">Калуга</a>
+                        <a href="#">Кемерово</a>
+                        <a href="#">Киров</a>
+                        <a href="#">Кострома</a>
+                        <a href="#">Краснодар</a>
+                    </div>
+                </div>
+            </div>
+            <!-- HEADER MOBILE END -->
+
+            <div class="header__navigation-wrapper">
+                <nav class="header__navigation">
+                    <a href="#" class="header__navigation-item"><label for="modal_1"
+                            class="label__navigation">Топ-10</label></a>
+                    <a href="#" class="header__navigation-item"><label for="modal_2"
+                            class="label__navigation">Концерты</a></label>
+                    <a href="#" class="header__navigation-item"><label for="modal_3"
+                            class="label__navigation">Театры</a></label>
+                    <a href="#" class="header__navigation-item"><label for="modal_4"
+                            class="label__navigation">Детям</a></label>
+                    <a href="#" class="header__navigation-item"><label for="modal_5"
+                            class="label__navigation">Мюзиклы</a></label>
+                    <select name="#" id="#" class="header__navigation-item header__nacvigation-select">
+                        <option value="">Еще категории</option>
+                        <option value="">Еще категории</option>
+                        <option value="">Еще категории</option>
+                        <option value="">Еще категории</option>
+                        <option value="">Еще категории</option>
+                    </select>
+                    <a href="#" class="header__navigation-item"><label for="modal_6"
+                            class="label__navigation">Организаторам</label></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- modal1 -->
+
+    <input type="radio" id="modal_1" name="modal" hidden>
+    <div class="modal1">
+        <div class="container">
+            <div class="modal__inner">
+                <label for="modal_2" class="close__btn"> &times; </label>
+
+                <div class="modal__title">Выберите город</div>
+                <div class="modal__input">
+                    <img src="./images/modal__input.svg" alt="">
+                    <input type="text" placeholder="Найти город">
+                </div>
+                <div class="modal__spiska-wrapper">
+                    <div class="modal__spiska">
+                        <div class="modal__spiska-item">
+                            <a href="#">Москва</a>
+                            <a href="#">Санкт-Петербург</a>
+                            <a href="#">Екатеринбург</a>
+                            <a href="#">Абакан</a>
+                            <a href="#">Анапа</a>
+                            <a href="#">Архангельск</a>
+                            <a href="#">Астрахань</a>
+                        </div>
+                        <div class="modal__spiska-item">
+                            <a href="#">Москва</a>
+                            <a href="#">Санкт-Петербург</a>
+                            <a href="#">Екатеринбург</a>
+                            <a href="#">Абакан</a>
+                            <a href="#">Анапа</a>
+                            <a href="#">Архангельск</a>
+                            <a href="#">Астрахань</a>
+                        </div>
+                        <div class="modal__spiska-item">
+                            <a href="#">Москва</a>
+                            <a href="#">Санкт-Петербург</a>
+                            <a href="#">Екатеринбург</a>
+                            <a href="#">Абакан</a>
+                            <a href="#">Анапа</a>
+                            <a href="#">Архангельск</a>
+                            <a href="#">Астрахань</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="radio" id="modal_2" name="modal" hidden>
+    <input type="radio" id="modal_3" name="modal" hidden>
+    <input type="radio" id="modal_4" name="modal" hidden>
+    <input type="radio" id="modal_5" name="modal" hidden>
+    <input type="radio" id="modal_6" name="modal" hidden>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Hello World</h2>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <div class="footer__content">
+                        <div class="footer__content-title">Главная</div>
+                        <a href="#">Контакты</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Возврат билетов</a>
+                        <a href="#">Личный кабинет</a>
+                    </div>
+                    <div class="footer__content">
+                        <div class="footer__content-title">Партнёрам и организаторам</div>
+                        <a href="#">Партнёрам и организаторам мероприятий</a>
+                        <a href="#">Поддержка</a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__phone">8(800) 101 56 86</div>
+                    <div class="footer__email">
+                        <div class="footer__email-item">
+                            <img src="./images/footer__envelope.svg" alt="">
+                            <span>help@oneconcert.ru</span>
+                        </div>
+                        <div class="footer__email-item">
+                            <img src="./images/footer__envelope.svg" alt="">
+                            <span>sales@oneconcert.ru для организаторов</span>
+                        </div>
+                    </div>
+                    <div class="social__network">
+                        <div class="social__network-title">Социальные сети</div>
+                        <div class="soccial__netwoks">
+                            <img src="./images/footer__W.svg" alt="" class="social__networks-item">
+                            <img src="./images/footer__telegram.png" alt="" class="social__networks-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span>Политика конфиденциальности</span>
+                <span>© Company 2023</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

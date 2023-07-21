@@ -7,7 +7,7 @@ let swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: true,
     freeMode: false,//??????
-    mousewheel: false,//o'tkazish effektlari
+    mousewheel:false,//o'tkazish effektlari
 
     keyboard: {
         enabled: true,

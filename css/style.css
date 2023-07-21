@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 /* header mobile start */
+@import 'remixicon/fonts/remixicon.css';
 
 #header__menu:checked+.header__menu-modal {
     height: 100vh;
@@ -193,7 +194,7 @@
 }
 
 .swiper__bottom {
-    position:relative;
+    position: relative;
     margin-top: 30px;
 
 }
@@ -289,15 +290,21 @@
     cursor: pointer;
 }
 
+.top__slider-arrows__right i,
+.top__slider-arrows__left i {
+    color: #E0E0E0;
+    transition: .3s;
+}
+
 .top__slider-namber {
     position: relative;
     width: 50px;
     height: 30px;
 }
 
-.top__slider-arrows__right:hover,
-.top__slider-arrows__left:hover {
-    background: #e0e0e038;
+.top__slider-arrows__right:hover>i,
+.top__slider-arrows__left:hover>i {
+    color: #060606;
 }
 
 .slider2 img {
@@ -823,7 +830,7 @@ footer {
     .top__slider-logo h2 {
         font-size: 28px;
     }
-  
+
 }
 
 @media (max-width:500px) {
@@ -855,8 +862,8 @@ footer {
         margin-top: 38px;
     }
 
-      .top__arrows-right{
+    .top__arrows-right {
         display: none;
     }
-    
+
 }
